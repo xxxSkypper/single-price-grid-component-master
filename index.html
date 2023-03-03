@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body{
+      margin: 0;
+      font-family: 'Karla', sans-serif;
+      font-size: 1rem;
+      background-color: whitesmoke;
+
+    }
+    .wrapper{
+      width: 80%;
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 3em;
+    }
+    .hero{
+      padding: 2em;
+      background-color: #fff;
+      border-radius: .5em .5em 0 0;
+    }
+    .hero__title{
+      color: hsl(179, 62%, 43%);
+    }
+    .hero__subtitle{
+      color: hsl(71, 73%, 54%);
+    }
+    .hero__body{
+      color: hsl(218, 22%, 67%);
+      line-height: 2;
+    }
+    .container{
+      color: #fff;
+    }
+
+    .row{
+      display: flex;
+      justify-content: space-between;
+    }
+    .col1{
+      width: 100%;
+      padding: 2em;
+      background-color: hsl(179, 62%, 43%);
+      border-radius: 0 0 0 .5em;
+    }
+    .col1 .accent-size{
+      font-size: 2rem;
+    }
+    .aceent-color{
+      color:hsl(204, 43%, 93%) ;
+    }
+    .col1__para2{
+      font-weight: 400;
+    }
+    .btn{
+      width: 100%;
+      padding: 1.1em 1em;
+      border: none;
+      border-radius: .5em;
+      background-color: hsl(71, 73%, 54%);
+      color: #fff;
+    }
+    .col2{
+      width: 100%;
+      padding: 2em;
+      background-color: hsl(179, 62%, 43%);
+      opacity: .7;
+      border-radius: 0 0 .5em 0;
+    }
+    .col2__body{
+      color: hsl(204, 43%, 93%);
+    }
+    .attribution { font-size: 1rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); text-decoration: none; }
+
+    @media  (max-width:768px) {
+      .wrapper{
+        width: 100%;
+      }
+      .row{
+        flex-direction: column;
+     
+      }
+      .col1{
+        border-radius: 0;
+      }
+      .col1__title,  .col2__title{
+        font-size: 1.5rem;
+      }
+      .btn{
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="hero">
+      <h1 class="hero__title"> Join our community </h1>
+      <h3 class="hero__subtitle"> 30-day, hassle-free money back guarantee </h3>
+      <p class="hero__body">
+        Gain access to our full library of tutorials along with expert code reviews. <br>
+        Perfect for any developers who are serious about honing their skills.
+      </p>
+    </div>
+    <div class="container row">
+      <div class="col1">
+        <h1 class="col1__title" >  Monthly Subscription</h1>
+        <p class="col1__para1"><span class="accent-size"> &dollar;29</span> <span class="accent-color">per month</span> </p>
+        <p class="col1__para2"> Full access for less than &dollar;1 a day</p>
+        <button class="btn" type="submit">   Sign Up</button>
+      </div>
+      <div class="col2">
+        <h1 class="col2__tilte">  Why Us</h1>
+        <p class="col2__body">
+          Tutorials by industry experts
+          Peer &amp; expert code review
+          Coding exercises
+          Access to our GitHub repos
+          Community forum
+          Flashcard decks
+          New videos every week
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.github.com/xxxSkypper">xxxSkypper</a>.
+    </p>
+  </footer>
+</body>
+</html>
